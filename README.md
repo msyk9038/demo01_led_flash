@@ -1,31 +1,79 @@
+# LED点滅デモ - micro:bit プロジェクト
 
-> このページを開く [https://msyk9038.github.io/demo01_led_flash/](https://msyk9038.github.io/demo01_led_flash/)
+このプロジェクトは、BBC micro:bitを使用したLED点滅のデモンストレーションです。
 
-## 拡張機能として使用
+## 概要
 
-このリポジトリは、MakeCode で **拡張機能** として追加できます。
+micro:bitのLEDディスプレイを使用して、様々なパターンでLEDを点滅させるプログラムです。プログラミング入門として、基本的なLED制御の方法を学ぶことができます。
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
-* **新しいプロジェクト** をクリックしてください
-* ギアボタンメニューの中にある **拡張機能** をクリックしてください
-* **https://github.com/msyk9038/demo01_led_flash** を検索してインポートします。
+## 機能
 
-## このプロジェクトを編集します ![ビルド ステータス バッジ](https://github.com/msyk9038/demo01_led_flash/workflows/MakeCode/badge.svg)
+- 単純な点滅パターン
+- 波状に動くアニメーション
+- ランダムなLEDパターン
+- ボタン操作によるパターン切替
+- 明るさの調整
 
-MakeCode でこのリポジトリを編集します。
+## 使用方法
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
-* **読み込む** をクリックし、 **URLから読み込む...** をクリックしてください
-* **https://github.com/msyk9038/demo01_led_flash** を貼り付けてインポートをクリックしてください
+1. [MakeCode エディタ](https://makecode.microbit.org/)を開く
+2. 「読み込む」をクリックし、このリポジトリからダウンロードした .hex ファイルを選択
+3. または、「インポート」→「URLから読み込む」を選択し、このリポジトリのURLを入力
+4. micro:bitにダウンロードして使用
+5. 電源を入れると自動的にデモが開始されます
 
-## ブロックのプレビュー
+## 操作方法
 
-この画像はマスター内の最後のコミットからのブロックコードを示しています。
-このイメージは更新に数分かかる場合があります。
+- Aボタン: 次のパターンに切り替え
+- Bボタン: 前のパターンに切り替え
+- A+Bボタン同時押し: ランダムパターンの表示
 
-![生成されたブロック](https://github.com/msyk9038/demo01_led_flash/raw/master/.github/makecode/blocks.png)
+## 点滅パターン
 
-#### メタデータ (検索、レンダリングに使用)
+1. **シンプル点滅**: 全てのLEDが同時に点滅
+2. **ウェーブ**: LEDが波のように左右に動く
+3. **スパイラル**: 中心から外側に向かって点灯
+4. **ランダム**: ランダムなLEDが点灯
+5. **フェードイン/アウト**: 全体の明るさが徐々に変化
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## コードの解説
+
+このプロジェクトでは、以下のような基本的なプログラミング概念を学ぶことができます：
+
+- 変数の使用
+- ループ処理
+- 条件分岐
+- 関数の定義と呼び出し
+- イベント処理（ボタン押下など）
+- 配列の操作
+
+## カスタマイズ
+
+コード内の以下の部分を編集することで、デモをカスタマイズできます：
+
+- `interval` 変数: 点滅の速度
+- `patterns` 配列: 点滅パターンの定義
+- `brightness` 変数: LEDの明るさ
+
+## 教育利用
+
+このプロジェクトは、プログラミング教育の導入として最適です。以下のような学習目標に活用できます：
+
+- プログラミングの基本概念の理解
+- アルゴリズム思考の育成
+- デジタル出力の制御方法の学習
+- パターン認識と創造的思考の促進
+
+## 発展アイデア
+
+- 音楽と連動したライトショー
+- センサー入力に応じたLEDパターンの変化
+- 複数のmicro:bitを連携させた大規模なLEDディスプレイ
+
+## ライセンス
+
+MIT
+
+## 作者
+
+msyk9038
